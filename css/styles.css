@@ -1,6 +1,12 @@
+/*
+font-family: 'Fredoka One', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+*/
+
 body {
 	margin: 0;
-	font: 15px/1.9em sans-serif;
+	font: 15px/1.9em "Roboto", sans-serif;
 	color: #333;
 }
 
@@ -8,6 +14,52 @@ body {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+header.main .container .top {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 25px 0;
+}
+
+.logo {
+	font-family: 'Roboto slab', sans-serif;
+	font-weight: 700;
+	text-decoration: none;
+	font-size: 30px;
+	color: #333;
+}
+
+header.main nav {
+	background: #eee;
+	margin-bottom: 50px;
+}
+
+header.main nav a {
+	text-decoration: none;
+	color: #000;
+	padding: 10px 20px;
+	display: inline-block;
+}
+
+section.content .container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+section.content aside {
+	flex: 0 0 20%;
+}
+
+section.content main {
+	flex: 0 0 75%;
 }
 
 .items {
@@ -26,4 +78,20 @@ body {
 .items li img {
 	width: 100%;
 	height: auto;
+}
+
+footer.main {
+	background: #eee;
+	margin-top: 100px;
+	padding: 25px 0;
+}
+
+footer.main .row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+footer.main .col {
+	flex: 0 0 30%;
 }
