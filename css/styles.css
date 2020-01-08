@@ -107,6 +107,7 @@ section.content main {
 	flex: 0 0 30%;
 	list-style: none;
 	margin-bottom: 50px;
+	text-align: center;
 }
 
 .items li .image {
@@ -133,6 +134,7 @@ section.content main {
 	outline: 0 none;
 	position: absolute;
 	bottom: 0;
+	left: 0;
 }
 
 .items li button:hover {
