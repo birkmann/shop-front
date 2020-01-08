@@ -1,0 +1,29 @@
+body {
+	margin: 0;
+	font: 15px/1.9em sans-serif;
+	color: #333;
+}
+
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.items {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+}
+
+.items li {
+	flex: 0 0 30%;
+	list-style: none;
+}
+
+.items li img {
+	width: 100%;
+	height: auto;
+}
