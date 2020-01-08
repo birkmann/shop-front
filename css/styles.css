@@ -19,6 +19,7 @@ body {
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
+	padding: 0 20px;
 }
 
 header.main .container .top {
@@ -65,7 +66,12 @@ header.main .nav-bar {
 header.main .nav-bar ul {
 	margin: 0;
 	padding: 0;
-	display: flex;
+}
+
+@media (min-width: 600px) {
+	header.main .nav-bar ul {
+		display: flex;
+	}
 }
 
 header.main .nav-bar li {
@@ -81,33 +87,42 @@ header.main .nav-bar a {
 	padding: 15px 0;
 }
 
-section.content .container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
+@media (min-width: 1000px) {
+	section.content .container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
 
-section.content aside {
-	flex: 0 0 20%;
-}
+	section.content aside {
+		flex: 0 0 20%;
+	}
 
-section.content main {
-	flex: 0 0 75%;
+	section.content main {
+		flex: 0 0 75%;
+	}
 }
 
 .items {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
 	margin: 0;
 	padding: 0;
 }
 
 .items li {
-	flex: 0 0 30%;
 	list-style: none;
 	margin-bottom: 50px;
 	text-align: center;
+}
+
+@media (min-width: 1000px) {
+	.items {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.items li {
+		flex: 0 0 30%;
+	}
 }
 
 .items li .image {
@@ -130,20 +145,25 @@ section.content main {
 	border: 0 none;
 	cursor: pointer;
 	transition: all 0.15s ease-in-out;
-	transform: translateY(100%);
 	outline: 0 none;
-	position: absolute;
-	bottom: 0;
-	left: 0;
+}
+
+@media (min-width: 1000px) {
+	.items li button {
+		transform: translateY(100%);
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+	.items li:hover button {
+		transform: translateY(0%);
+	}
 }
 
 .items li button:hover {
 	background: #333;
 }
 
-.items li:hover button {
-	transform: translateY(0%);
-}
 
 .items li .details {
 	padding: 10px 0;
@@ -173,12 +193,14 @@ footer.main h4{
 	margin: 10px 0;
 }
 
-footer.main .row {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
+@media (min-width: 1000px) {
+	footer.main .row {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
 
-footer.main .col {
-	flex: 0 0 30%;
+	footer.main .col {
+		flex: 0 0 30%;
+	}
 }
