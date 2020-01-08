@@ -106,11 +106,23 @@ section.content main {
 .items li {
 	flex: 0 0 30%;
 	list-style: none;
+	text-align: center;
+	margin-bottom: 50px;
 }
 
 .items li img {
 	width: 100%;
 	height: auto;
+	display: block;
+}
+
+.items li .details {
+	background: #eee;
+	padding: 10px;
+}
+
+.items li h4 {
+	margin: 0;
 }
 
 footer.main {
