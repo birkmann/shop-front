@@ -150,13 +150,12 @@ header.main .nav-bar a {
 
 @media (min-width: 1000px) {
 	.items li button {
-		transform: translateY(100%);
 		position: absolute;
-		bottom: 0;
+		bottom: -50px;
 		left: 0;
 	}
 	.items li:hover button {
-		transform: translateY(0%);
+		bottom: 0;
 	}
 }
 
