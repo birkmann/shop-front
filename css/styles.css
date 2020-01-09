@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-	max-width: 1200px;
+	max-width: 1800px;
 	margin: 0 auto;
 	padding: 0 20px;
 }
@@ -58,33 +58,29 @@ a.cart .text {
 	margin-left: 3px;
 }
 
-header.main .nav-bar {
-	background: #000;
-	margin-bottom: 50px;
-}
-
-header.main .nav-bar ul {
+header.main nav ul {
 	margin: 0;
 	padding: 0;
 }
 
 @media (min-width: 600px) {
-	header.main .nav-bar ul {
+	header.main nav ul {
 		display: flex;
 	}
 }
 
-header.main .nav-bar li {
+header.main nav li {
 	margin: 0;
 	list-style: none;
-	margin-right: 50px;
 }
 
-header.main .nav-bar a {
+header.main nav a {
 	display: block;
 	text-decoration: none;
-	color: #fff;
-	padding: 15px 0;
+	padding: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #000;
 }
 
 @media (min-width: 1000px) {
