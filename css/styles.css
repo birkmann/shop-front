@@ -22,6 +22,11 @@ body {
 	padding: 0 20px;
 }
 
+header.main {
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 50px;
+}
+
 header.main .container .top {
 	display: flex;
 	flex-wrap: wrap;
@@ -35,24 +40,27 @@ header.main .container .top {
 	text-decoration: none;
 	font-size: 30px;
 	color: #333;
+	align-self: center;
 }
 
-a.cart {
+header.main .cart {
 	display: inline-block;
 	text-decoration: none;
 	color: #000;
+	align-self: center;
+	cursor: pointer;
 }
 
-a.cart * {
+header.main .cart * {
 	display: inline-block;
 	vertical-align: middle;
 }
 
-a.cart img {
+header.main .cart img {
 	width: 30px;
 }
 
-a.cart .text {
+header.main .cart .text {
 	position: relative;
 	top: 2px;
 	margin-left: 3px;
@@ -64,8 +72,19 @@ header.main nav ul {
 }
 
 @media (min-width: 600px) {
+	header.main {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 99;
+		width: 100%;
+		background: #fff;
+	}
 	header.main nav ul {
 		display: flex;
+	}
+	section.content {
+		margin-top: 200px;
 	}
 }
 
@@ -83,19 +102,28 @@ header.main nav a {
 	color: #000;
 }
 
+section.content .row {
+	margin: 50px 0;
+}
+
+section.content aside h3 {
+	margin-top: 0;
+}
+
 @media (min-width: 1000px) {
-	section.content .container {
+	section.content .row {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
 	}
 
 	section.content aside {
-		flex: 0 0 20%;
+		flex: 0 0 240px;
+		padding-right: 50px;
 	}
 
 	section.content main {
-		flex: 0 0 75%;
+		flex: 0 0 calc(100% - 240px);
 	}
 }
 
@@ -117,7 +145,7 @@ header.main nav a {
 		justify-content: space-between;
 	}
 	.content .items li {
-		flex: 0 0 30%;
+		flex: 0 0 32.5%;
 	}
 }
 
