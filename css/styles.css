@@ -3,37 +3,31 @@ font-family: 'Fredoka One', cursive;
 font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Slab', serif;
 */
-
 body {
 	margin: 0;
 	font: 15px/1.9em "Roboto", sans-serif;
 	color: #333;
 }
-
 *, *:before, *:after {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-
 .container {
 	max-width: 1800px;
 	margin: 0 auto;
 	padding: 0 20px;
 }
-
 header.main {
 	border-bottom: 1px solid #ddd;
 	margin-bottom: 50px;
 }
-
 header.main .container .top {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	padding: 25px 0;
 }
-
 .logo {
 	font-family: 'Roboto slab', sans-serif;
 	font-weight: 700;
@@ -42,7 +36,6 @@ header.main .container .top {
 	color: #333;
 	align-self: center;
 }
-
 header.main .cart {
 	display: inline-block;
 	text-decoration: none;
@@ -50,27 +43,22 @@ header.main .cart {
 	align-self: center;
 	cursor: pointer;
 }
-
 header.main .cart * {
 	display: inline-block;
 	vertical-align: middle;
 }
-
 header.main .cart img {
 	width: 30px;
 }
-
 header.main .cart .text {
 	position: relative;
 	top: 2px;
 	margin-left: 3px;
 }
-
 header.main nav ul {
 	margin: 0;
 	padding: 0;
 }
-
 @media (min-width: 600px) {
 	header.main {
 		position: fixed;
@@ -87,12 +75,10 @@ header.main nav ul {
 		margin-top: 200px;
 	}
 }
-
 header.main nav li {
 	margin: 0;
 	list-style: none;
 }
-
 header.main nav a {
 	display: block;
 	text-decoration: none;
@@ -101,43 +87,35 @@ header.main nav a {
 	text-transform: uppercase;
 	color: #000;
 }
-
 section.content .row {
 	margin: 50px 0;
 }
-
 section.content aside h3 {
 	margin-top: 0;
 }
-
 @media (min-width: 1000px) {
 	section.content .row {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
 	}
-
 	section.content aside {
 		flex: 0 0 240px;
 		padding-right: 50px;
 	}
-
 	section.content main {
 		flex: 0 0 calc(100% - 240px);
 	}
 }
-
 .content .items {
 	margin: 0;
 	padding: 0;
 }
-
 .content .items li {
 	list-style: none;
 	margin-bottom: 25px;
 	text-align: center;
 }
-
 @media (min-width: 1000px) {
 	.content .items {
 		display: flex;
@@ -148,90 +126,78 @@ section.content aside h3 {
 		flex: 0 0 32.5%;
 	}
 }
-
 .content .items li .image {
 	position: relative;
 	overflow: hidden;
 }
-
 .content .items li img {
 	width: 100%;
 	height: auto;
 	display: block;
 }
-
 .content .items li button {
-	width: 100%;
-	height: 50px;
-	background: #000;
+	padding: 15px 20px;
+	background: rgb(250, 84, 0);
+	font-weight: bold;
+	font-size: 1.1em;
+	border-radius: 25px;
 	color: #fff;
 	text-align: center;
 	border: 0 none;
 	cursor: pointer;
-	transition: all 0.15s ease-in-out;
+	transition: all 0.2s ease-in-out;
 	outline: 0 none;
 }
-
 @media (min-width: 1000px) {
 	.content .items li button {
 		position: absolute;
-		bottom: -50px;
-		left: 0;
+		left: 50%;
+		bottom: -100px;
+		transform: translate(-50%,-50%);
 	}
 	.content .items li:hover button {
-		bottom: 0;
+		bottom: 50px;
 	}
 }
-
 .content .items li button:hover {
 	background: #333;
 }
-
-
 .content .items li .details {
 	padding: 10px 0;
 }
-
 .content .items li h4,
 .items li h5 {
 	margin: 0;
 	line-height: 1.6em;
 }
-
 .content .items li h5 {
 	color: #666;
 	font-size: 0.8em;
 	font-weight: normal;
 }
-
 footer.main {
 	background: #232323;
 	color: #969696;
 	margin-top: 100px;
 	padding: 25px 0;
 }
-
 footer.main h4{
 	color: #fff;
 	margin: 10px 0;
 }
-
 @media (min-width: 1000px) {
 	footer.main .row {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
 	}
-
 	footer.main .col {
 		flex: 0 0 30%;
 	}
 }
-
 body.cart-show section.cart {
 	right: 0;
 }
-
 section.cart {
 	position: fixed;
 	top: 0;
@@ -247,40 +213,36 @@ section.cart {
 	display: flex;
 	flex-direction: column;
 }
-
-section.cart .close {
-	cursor: pointer;
+section.cart a {
+	text-decoration: none;
+	color: #333;
 }
-
+section.cart a:hover {
+	text-decoration: underline;
+}
 section.cart .items {
 	margin: 50px 0;
 	padding: 0;
 }
-
 section.cart .items li {
 	display: flex;
-	margin-bottom: 20px;
+	margin-bottom: 50px;
 }
-
 section.cart .items .image {
 	flex: 0 0 30%;
 	margin-right: 10px;
 }
-
 section.cart .items img {
 	width: 100%;
 }
-
 section.cart .items h4 {
 	margin: 0;
 }
-
 section.cart .total {
 	border-top: 1px solid #ccc;
 	padding-top: 10px;
 	font-size: 1.1em;
 }
-
 section.cart button {
 	margin-top: auto;
 	background: #000;
