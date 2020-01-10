@@ -94,6 +94,10 @@ header.main .menu-toggle img {
 	align-self: center;
 }
 
+.close-side {
+	display: none;
+}
+
 @media (max-width: 899px) {
 	header.main nav {
 		display: block;
@@ -138,6 +142,8 @@ header.main .menu-toggle img {
 		transition: opacity .2s,visibility 0ms;
 	}
 	body.show-menu .close-side {
+		cursor: pointer;
+		display: block;
 		position: fixed;
 		top: 0;
 		left: 0;
