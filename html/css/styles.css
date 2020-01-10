@@ -137,6 +137,13 @@ header.main .menu-toggle img {
 		visibility: visible;
 		transition: opacity .2s,visibility 0ms;
 	}
+	body.show-menu .close-side {
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		width: calc(100% - 250px);
+	}
 }
 
 @media (min-width: 900px) {
