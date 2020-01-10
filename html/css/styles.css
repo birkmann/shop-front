@@ -177,7 +177,7 @@ header.main .menu-toggle img {
 	height: 300px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 900px) {
 	.emotion {
 		height: 75vh;
 	}
