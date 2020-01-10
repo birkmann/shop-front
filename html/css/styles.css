@@ -187,11 +187,10 @@ header.main .menu-toggle img {
 .emotion {
 	background-size: cover;
 	background-position: center;
-	height: 300px;
+	padding-top: 55px;
 }
 
-@media (min-width: 900px) {
-	.emotion {
-		height: 75vh;
-	}
+.emotion img {
+	width: 100%;
+	height: auto;
 }
