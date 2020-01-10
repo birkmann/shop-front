@@ -24,7 +24,9 @@ body {
 }
 
 header.main {
-	border-bottom: 1px solid #ccc;
+	position: fixed;
+	width: 100%;
+	background: #fff;
 }
 
 header.main a {
@@ -55,7 +57,7 @@ header.main nav a {
 }
 
 header.main nav a:hover {
-	box-shadow: inset 0 -2px 0 0 #111;
+	box-shadow: inset 0 -3px 0 0 #333;
 }
 
 header.main .cart {
@@ -69,4 +71,11 @@ header.main .cart img {
 
 header.main .cart .text {
 	align-self: center;
+}
+
+.emotion {
+	width: 100%;
+	height: 75vh;
+	background-size: cover;
+	background-position: center;
 }
