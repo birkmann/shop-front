@@ -77,11 +77,12 @@ header.main nav li {
 header.main nav a {
 	display: block;
 	text-decoration: none;
-	padding: 20px;
+	margin: 20px;
 	font-weight: bold;
 	text-transform: uppercase;
 	color: #000;
 	text-align: center;
+	border-bottom: 2px solid transparent;
 }
 @media (min-width: 600px) {
 	header.main {
@@ -100,6 +101,9 @@ header.main nav a {
 	}
 	header.main nav a {
 		text-align: left;
+	}
+	header.main nav a:hover {
+		border-bottom: 2px solid #000;
 	}
 	section.emotion {
 		margin-top: 115px;
