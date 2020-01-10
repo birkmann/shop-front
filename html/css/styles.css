@@ -194,3 +194,9 @@ header.main .menu-toggle img {
 	width: 100%;
 	height: auto;
 }
+
+@media (min-width: 900px) {
+	.emotion {
+		padding-top: 70px;
+	}
+}
