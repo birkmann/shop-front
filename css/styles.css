@@ -31,27 +31,11 @@ header.main {
 	}
 }
 .logo {
-	font-family: 'Roboto slab', sans-serif;
-	font-weight: 700;
-	text-decoration: none;
-	font-size: 25px;
-	color: #ffce54;
-	align-self: center;
 	display: flex;
 }
-.logo .icon {
-	flex: 0 0 33%;
-	align-self: center;
-}
-.logo .icon img{
+.logo img{
 	width: 100%;
 	max-width: 50px;
-	height: auto;
-	margin-right: 20px;
-}
-.logo .text {
-	flex: 0 0 77%;
-	align-self: center;
 }
 header.main .cart {
 	display: inline-block;
