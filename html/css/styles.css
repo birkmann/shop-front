@@ -1,26 +1,29 @@
-*::before,
-*::after {
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
 body {
 	font: 14px/1.6em sans-serif;
 	margin: 0;
+	overflow-y: scroll;
 }
 
 .container {
 	max-width: 1600px;
 	margin: 0 auto;
+	padding: 0 20px;
 }
 
 .logo {
-	padding: 10px;
+	padding: 10px 10px 10px 0;
+	margin-right: auto;
 }
 
 .logo img {
 	display: block;
-	width: 100%;
-	max-height: 50px;
+	width: 35px;
 }
 
 header.main {
@@ -29,20 +32,24 @@ header.main {
 	background: #fff;
 }
 
-header.main a {
-	color: #000;
-	text-decoration: none;
-}
-
 header.main .container {
 	display: flex;
 	justify-content: space-between;
 }
 
+header.main a {
+	display: inline-block;
+	color: #000;
+	text-decoration: none;
+}
+
+header.main nav {
+	display: none;
+}
+
 header.main nav ul {
 	margin: 0;
 	padding: 0;
-	display: flex;
 }
 
 header.main nav li {
@@ -51,13 +58,11 @@ header.main nav li {
 
 header.main nav a {
 	display: inline-block;
-	padding: 25px;
 	font-weight: bold;
 	text-transform: uppercase;
-}
-
-header.main nav a:hover {
-	box-shadow: inset 0 -3px 0 0 #333;
+	padding: 15px;
+	text-align: center;
+	width: 100%;
 }
 
 header.main .cart {
@@ -71,11 +76,61 @@ header.main .cart img {
 
 header.main .cart .text {
 	align-self: center;
+	display: none;
+}
+
+header.main .menu-toggle {
+	display: flex;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+header.main .menu-toggle img {
+	width: 25px;
+	height: 25px;
+	align-self: center;
+}
+
+@media (min-width: 900px) {
+	.logo {
+		padding: 10px;
+		margin-right: 0;
+	}
+	.logo img {
+		width: 50px;
+	}
+	header.main .menu-toggle {
+		display: none;
+	}
+	header.main nav {
+		display: block;
+	}
+	header.main nav ul {
+		display: flex;
+		margin: 0;
+		padding: 0;
+	}
+	header.main nav a {
+		padding: 25px;
+		text-align: left;
+		width: auto;
+	}
+	header.main nav a:hover {
+		box-shadow: inset 0 -3px 0 0 #333;
+	}
+	header.main .cart .text {
+		display: block;
+	}
 }
 
 .emotion {
-	width: 100%;
-	height: 75vh;
 	background-size: cover;
 	background-position: center;
+	height: 300px;
+}
+
+@media (min-width: 600px) {
+	.emotion {
+		height: 75vh;
+	}
 }
