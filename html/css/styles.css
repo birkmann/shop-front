@@ -91,6 +91,43 @@ header.main .menu-toggle img {
 	align-self: center;
 }
 
+@media (max-width: 899px) {
+	header.main nav {
+		display: block;
+		position: fixed;
+		top: 0;
+		right: -100%;
+		width: 300px;
+		min-height: 100vh;
+		background: #fff;
+		transition: all 0.25s ease-in-out;
+		opacity: 0:;
+	}
+	body.show-menu header.main nav {
+		right: 0;
+		opacity: 1;
+	}
+	header.main:before {
+		content: "";
+		display: block;
+		z-index: -1;
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		opacity: 0;
+		visibility: hidden;
+		background: rgba(0,0,0,.5);
+		transition: all 0.25s ease-in-out;
+	}
+	body.show-menu header.main:before {
+		opacity: 1;
+		visibility: visible;
+		transition: opacity .2s,visibility 0ms;
+	}
+}
+
 @media (min-width: 900px) {
 	.logo {
 		padding: 10px;
