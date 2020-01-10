@@ -105,7 +105,7 @@ header.main .menu-toggle img {
 		background: #fff;
 		transform: translate3d(250px,0,0);
 		transition: all 0.25s ease-in-out;
-		opacity: 0:;
+		opacity: 0
 	}
 	body.show-menu header.main nav {
 		transform: translateZ(0);
