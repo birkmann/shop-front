@@ -1,0 +1,72 @@
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	font: 14px/1.6em sans-serif;
+	margin: 0;
+}
+
+.container {
+	max-width: 1600px;
+	margin: 0 auto;
+}
+
+.logo {
+	padding: 10px;
+}
+
+.logo img {
+	display: block;
+	width: 100%;
+	max-height: 50px;
+}
+
+header.main {
+	border-bottom: 1px solid #ccc;
+}
+
+header.main a {
+	color: #000;
+	text-decoration: none;
+}
+
+header.main .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+header.main nav ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+header.main nav li {
+	list-style: none;
+}
+
+header.main nav a {
+	display: inline-block;
+	padding: 25px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+header.main nav a:hover {
+	box-shadow: inset 0 -2px 0 0 #111;
+}
+
+header.main .cart {
+	display: flex;
+}
+
+header.main .cart img {
+	max-width: 25px;
+	margin-right: 5px;
+}
+
+header.main .cart .text {
+	align-self: center;
+}
