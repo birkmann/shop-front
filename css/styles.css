@@ -20,9 +20,11 @@ body {
 }
 header.main {
 	border-bottom: 1px solid #ddd;
-	margin-bottom: 50px;
 }
 @media (min-width: 600px) {
+	header.main {
+		margin-bottom: 50px;
+	}
 	header.main .container .top {
 		display: flex;
 		flex-wrap: wrap;
@@ -64,21 +66,9 @@ section.emotion img {
 	width: 100%;
 	height: auto;
 }
-@media (min-width: 600px) {
-	header.main {
-		position: fixed;
-		top: 0;
-		left: 0;
-		z-index: 99;
-		width: 100%;
-		background: #fff;
-	}
-	header.main nav ul {
-		display: flex;
-	}
-	section.emotion {
-		margin-top: 115px;
-	}
+
+header.main nav {
+	display: none;
 }
 header.main nav li {
 	margin: 0;
@@ -91,6 +81,29 @@ header.main nav a {
 	font-weight: bold;
 	text-transform: uppercase;
 	color: #000;
+	text-align: center;
+}
+@media (min-width: 600px) {
+	header.main {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 99;
+		width: 100%;
+		background: #fff;
+	}
+	header.main nav {
+		display: block;
+	}
+	header.main nav ul {
+		display: flex;
+	}
+	header.main nav a {
+		text-align: left;
+	}
+	section.emotion {
+		margin-top: 115px;
+	}
 }
 section.content .row {
 	margin: 50px 0;
