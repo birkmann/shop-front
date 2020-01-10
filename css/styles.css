@@ -22,18 +22,35 @@ header.main {
 	border-bottom: 1px solid #ddd;
 	margin-bottom: 50px;
 }
-header.main .container .top {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	padding: 25px 0;
+@media (min-width: 600px) {
+	header.main .container .top {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding: 25px 0;
+	}
 }
 .logo {
 	font-family: 'Roboto slab', sans-serif;
 	font-weight: 700;
 	text-decoration: none;
-	font-size: 30px;
-	color: #333;
+	font-size: 25px;
+	color: #ffce54;
+	align-self: center;
+	display: flex;
+}
+.logo .icon {
+	flex: 0 0 33%;
+	align-self: center;
+}
+.logo .icon img{
+	width: 100%;
+	max-width: 50px;
+	height: auto;
+	margin-right: 20px;
+}
+.logo .text {
+	flex: 0 0 77%;
 	align-self: center;
 }
 header.main .cart {
@@ -59,6 +76,10 @@ header.main nav ul {
 	margin: 0;
 	padding: 0;
 }
+section.emotion img {
+	width: 100%;
+	height: auto;
+}
 @media (min-width: 600px) {
 	header.main {
 		position: fixed;
@@ -71,8 +92,8 @@ header.main nav ul {
 	header.main nav ul {
 		display: flex;
 	}
-	section.content {
-		margin-top: 200px;
+	section.emotion {
+		margin-top: 115px;
 	}
 }
 header.main nav li {
