@@ -117,7 +117,7 @@ header.main .menu-toggle img {
 		right: 0;
 		opacity: 1;
 	}
-	body.show-menu header.main nav a {
+	header.main nav a {
 		padding: 15px 25px;
 		font-weight: normal;
 		background: #f6f6f6;
