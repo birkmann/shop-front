@@ -200,3 +200,12 @@ header.main .menu-toggle img {
 		padding-top: 70px;
 	}
 }
+
+.intro {
+	display: flex;
+}
+
+.intro img {
+	width: 100%;
+	height: auto;
+}
