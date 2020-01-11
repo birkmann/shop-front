@@ -256,3 +256,18 @@ header.main .menu-toggle img {
 	    max-width: 25%;
 	}
 }
+
+.brands {
+	padding: 20px;
+}
+
+.brands ul {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+}
+
+.brands li {
+	list-style: none;
+}
