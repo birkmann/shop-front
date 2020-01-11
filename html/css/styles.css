@@ -28,6 +28,7 @@ body {
 
 header.main {
 	position: fixed;
+	z-index: 999;
 	width: 100%;
 	background: #fff;
 }
@@ -142,9 +143,10 @@ header.main .menu-toggle img {
 		transition: opacity .2s,visibility 0ms;
 	}
 	body.show-menu .close-side {
-		cursor: pointer;
 		display: block;
 		position: fixed;
+		z-index: 999;
+		cursor: pointer;
 		top: 0;
 		left: 0;
 		bottom: 0;
@@ -188,28 +190,21 @@ header.main .menu-toggle img {
 	background-size: cover;
 	background-position: center;
 	padding-top: 55px;
-}
-
-.emotion img {
-	width: 100%;
-	height: auto;
-	display: block;
+	min-height: 400px;
 }
 
 @media (min-width: 900px) {
 	.emotion {
 		padding-top: 70px;
+		height: 70vh;
 	}
 }
 
 .intro {
-	display: flex;
 	padding: 5px;
 }
 
 .intro .col {
-	flex: 0 0 25%;
-    max-width: 25%;
     position: relative;
     overflow: hidden;
     padding: 5px;
@@ -242,10 +237,20 @@ header.main .menu-toggle img {
 }
 
 .intro .col:hover img {
-	transform: scale(1.2);
+	transform: scale(1.1);
 }
 
 .intro .col:hover .title {
 	background: #000;
 	color: #fff;
+}
+
+@media (min-width: 900px) {
+	.intro {
+		display: flex;
+	}
+	.intro .col {
+		flex: 0 0 25%;
+	    max-width: 25%;
+	}
 }
