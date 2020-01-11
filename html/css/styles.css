@@ -148,7 +148,7 @@ header.main .menu-toggle img {
 		top: 0;
 		left: 0;
 		bottom: 0;
-		right: 0;
+		width: calc(100% - 250px);
 	}
 }
 
