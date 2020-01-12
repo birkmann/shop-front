@@ -1,106 +1,174 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta charset="UTF-8">
-		<title>Shopping Cart - Frontend</title>
-		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="css/styles.css">
-	</head>
-	<body>
-		<header class="main">
-			<div class="container">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<title>Shopping Cart - Frontend</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<header class="main">
+		<div class="container">
+			<a href="index.html" class="logo">
+				<img src="img/logo.svg" alt="Logo">
+			</a>
+			<nav id="nav-main">
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">Clothing</a></li>
+					<li><a href="">Shoes</a></li>
+					<li><a href="">Women</a></li>
+					<li><a href="">Men</a></li>
+					<li><a href="">Contact</a></li>
+				</ul>
+			</nav>
+			<a href="#" class="cart">
+				<img src="img/cart.svg" alt="Cart">
+				<!--span class="text">Cart</span-->
+			</a>
+			<div class="menu-toggle">
+				<img src="img/menu.svg" alt="Menu">
+			</div>
+		</div>
+	</header>
+	<div class="close-side"></div>
+	<section class="emotion" style="background-image: url(https://images.unsplash.com/photo-1470093717298-580960d32547?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80);"></section>
+	<section class="intro">
+		<div class="col">
+			<a href="">
+				<span class="title">Shoes</span>
+				<img src="https://images.unsplash.com/photo-1570055923249-e9650abbddbb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+			</a>
+		</div>
+		<div class="col">
+			<a href="">
+				<span class="title">Women</span>
+				<img src="https://images.unsplash.com/photo-1500483808507-66d90ee151b3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+			</a>
+		</div>
+		<div class="col">
+			<a href="">
+				<span class="title">Sale</span>
+				<img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+			</a>
+		</div>
+		<div class="col">
+			<a href="">
+				<span class="title">Men</span>
+				<img src="https://images.unsplash.com/photo-1490132328392-e6ef54a90dda?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+			</a>
+		</div>
+	</section>
+	<div class="brands">
+		<ul>
+			<li>
+				<img src="img/logos/huf.jpg" alt="">
+			</li>
+			<li>
+				<img src="img/logos/vans.jpg" alt="">
+			</li>
+			<li>
+				<img src="img/logos/nike.jpg" alt="">
+			</li>
+			<li>
+				<img src="img/logos/girl.jpg" alt="">
+			</li>
+			<li>
+				<img src="img/logos/converse.jpg" alt="">
+			</li>
+			<li>
+				<img src="img/logos/volcom.jpg" alt="">
+			</li>
+			<li>
+				<img src="img/logos/dc.jpg" alt="">
+			</li>
+			<li>
+				<img src="img/logos/baker.jpg" alt="">
+			</li>
+			<li>
+				<img src="img/logos/rvca.jpg" alt="">
+			</li>
+			<li>
+				<img src="img/logos/bones.jpg" alt="">
+			</li>
+			<li>
+				<img src="img/logos/welcome.jpg" alt="">
+			</li>
+			<li>
+				<img src="img/logos/thrasher.jpg" alt="">
+			</li>
+		</ul>
+	</div>
+	<footer class="main">
+		<div class="container">
+			<div class="col left">
 				<a href="index.html" class="logo">
-					<img src="img/logo.svg" alt="Logo">
+					<img src="img/logo.svg" alt="">
 				</a>
-				<nav id="nav-main">
+			</div>
+			<div class="col center">
+				<div class="col">
+					<h3>Headline</h3>
 					<ul>
-						<li><a href="">Home</a></li>
-						<li><a href="">Clothing</a></li>
-						<li><a href="">Shoes</a></li>
-						<li><a href="">Women</a></li>
-						<li><a href="">Men</a></li>
-						<li><a href="">Contact</a></li>
+						<li>
+							<a href="">Lorem Ipsum</a>
+						</li>
+						<li>
+							<a href="">Dolor sit amet</a>
+						</li>
+						<li>
+							<a href="">Lorem Ipsum</a>
+						</li>
+						<li>
+							<a href="">Dolor sit amet</a>
+						</li>
 					</ul>
-				</nav>
-				<a href="#" class="cart">
-					<img src="img/cart.svg" alt="Cart">
-					<span class="text">Cart</span>
-				</a>
-				<div class="menu-toggle">
-					<img src="img/menu.svg" alt="Menu">
+				</div>
+				<div class="col">
+					<h3>Headline</h3>
+					<ul>
+						<li>
+							<a href="">Lorem Ipsum</a>
+						</li>
+						<li>
+							<a href="">Dolor sit amet</a>
+						</li>
+						<li>
+							<a href="">Lorem Ipsum</a>
+						</li>
+						<li>
+							<a href="">Dolor sit amet</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col">
+					<h3>Headline</h3>
+					<ul>
+						<li>
+							<a href="">Lorem Ipsum</a>
+						</li>
+						<li>
+							<a href="">Dolor sit amet</a>
+						</li>
+						<li>
+							<a href="">Lorem Ipsum</a>
+						</li>
+						<li>
+							<a href="">Dolor sit amet</a>
+						</li>
+					</ul>
 				</div>
 			</div>
-		</header>
-		<div class="close-side"></div>
-		<section class="emotion" style="background-image: url(https://images.unsplash.com/photo-1470093717298-580960d32547?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80);"></section>
-		<section class="intro">
-			<div class="col">
-				<a href="">
-					<span class="title">Shoes</span>
-					<img src="https://images.unsplash.com/photo-1570055923249-e9650abbddbb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
-				</a>
+			<div class="col right">
+				<form action="">
+					<input type="mail" placeholder="E-Mail">
+					<button>Sign Up</button>
+				</form>
 			</div>
-			<div class="col">
-				<a href="">
-					<span class="title">Women</span>
-					<img src="https://images.unsplash.com/photo-1500483808507-66d90ee151b3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
-				</a>
-			</div>
-			<div class="col">
-				<a href="">
-					<span class="title">Sale</span>
-					<img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
-				</a>
-			</div>
-			<div class="col">
-				<a href="">
-					<span class="title">Men</span>
-					<img src="https://images.unsplash.com/photo-1490132328392-e6ef54a90dda?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
-				</a>
-			</div>
-		</section>
-		<div class="brands">
-			<ul>
-				<li>
-					<img src="img/logos/huf.jpg" alt="">
-				</li>
-				<li>
-					<img src="img/logos/vans.jpg" alt="">
-				</li>
-				<li>
-					<img src="img/logos/nike.jpg" alt="">
-				</li>
-				<li>
-					<img src="img/logos/girl.jpg" alt="">
-				</li>
-				<li>
-					<img src="img/logos/converse.jpg" alt="">
-				</li>
-				<li>
-					<img src="img/logos/volcom.jpg" alt="">
-				</li>
-				<li>
-					<img src="img/logos/dc.jpg" alt="">
-				</li>
-				<li>
-					<img src="img/logos/baker.jpg" alt="">
-				</li>
-				<li>
-					<img src="img/logos/rvca.jpg" alt="">
-				</li>
-				<li>
-					<img src="img/logos/bones.jpg" alt="">
-				</li>
-				<li>
-					<img src="img/logos/welcome.jpg" alt="">
-				</li>
-				<li>
-					<img src="img/logos/thrasher.jpg" alt="">
-				</li>
-			</ul>
 		</div>
+	</footer>
 	<script src="js/main.js"></script>
-	</body>
+</body>
 </html>

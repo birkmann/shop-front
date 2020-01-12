@@ -5,7 +5,7 @@
 }
 
 body {
-	font: 14px/1.6em sans-serif;
+	font: 16px/1.6em sans-serif;
 	margin: 0;
 	overflow-y: scroll;
 }
@@ -234,7 +234,6 @@ header.main .menu-toggle img {
 	transform: translate(-50%,-50%);
 	background: #fff;
 	color: #000;
-	font-size: 1.25em;
 	font-weight: bold;
 	padding: 10px 25px;
 	transition: all 0.25s ease-in-out;
@@ -274,4 +273,73 @@ header.main .menu-toggle img {
 .brands li {
 	list-style: none;
 	margin: 5px;
+}
+
+footer.main {
+	background: #f2f2f2;
+	padding: 50px 0;
+	margin-top: 100px;
+}
+
+footer.main h3 {
+	margin: 0 0 20px;
+}
+
+footer.main ul {
+	margin: 0;
+	padding: 0;
+	line-height: 2em;
+}
+
+footer.main li {
+	list-style: none;
+}
+
+footer.main li a {
+	color: #333;
+	text-decoration: none;
+}
+
+footer.main li a:hover {
+	text-decoration: underline;
+	color: #000;
+}
+
+footer.main .container {
+	display: flex;
+}
+
+footer.main .col.left {
+	flex: 0 0 15%;
+}
+
+footer.main .col.right {
+	flex: 0 0 25%;
+}
+
+footer.main .col.center {
+	flex: 0 0 60%;
+	display: flex;
+}
+
+footer.main .col.center .col {
+	flex: 0 0 33%;
+}
+
+footer.main form {
+	display: flex;
+}
+
+footer.main form input {
+	font: inherit;
+	padding: 8px 10px;
+}
+
+footer.main form button {
+	background: #000;
+	color: #fff;
+	border: 0 none;
+	font-size: 0.8em;
+	cursor: pointer;
+	outline: 0 none;
 }
