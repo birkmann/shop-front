@@ -305,41 +305,50 @@ footer.main li a:hover {
 	color: #000;
 }
 
-footer.main .container {
-	display: flex;
-}
-
-footer.main .col.left {
-	flex: 0 0 15%;
-}
-
-footer.main .col.right {
-	flex: 0 0 25%;
-}
-
-footer.main .col.center {
-	flex: 0 0 60%;
-	display: flex;
-}
-
-footer.main .col.center .col {
-	flex: 0 0 33%;
-}
-
 footer.main form {
 	display: flex;
 }
 
 footer.main form input {
 	font: inherit;
-	padding: 8px 10px;
+    padding: 8px 10px;
+    flex: 0 0 70%;
 }
 
 footer.main form button {
 	background: #000;
-	color: #fff;
-	border: 0 none;
-	font-size: 0.8em;
-	cursor: pointer;
-	outline: 0 none;
+    color: #fff;
+    border: 0 none;
+    font-size: 0.8em;
+    cursor: pointer;
+    outline: 0 none;
+    padding: 0 15px;
+    flex: 0 0 30%;
+}
+
+footer.main .col {
+	margin-bottom: 25px;
+}
+
+@media (min-width: 900px) {
+	footer.main .container {
+		display: flex;
+	}
+
+	footer.main .col.left {
+		flex: 0 0 15%;
+	}
+
+	footer.main .col.right {
+		flex: 0 0 25%;
+	}
+
+	footer.main .col.center {
+		flex: 0 0 60%;
+		display: flex;
+	}
+
+	footer.main .col.center .col {
+		flex: 0 0 33%;
+	}
 }
