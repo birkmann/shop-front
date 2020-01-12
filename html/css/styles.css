@@ -334,7 +334,9 @@ footer.main .col {
 	footer.main .container {
 		display: flex;
 	}
-
+	footer.main .col {
+		margin-bottom: 0;
+	}
 	footer.main .col.left {
 		flex: 0 0 15%;
 	}
